@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    ports:
+      - "5173:5173"   # React app
+      - "3000:3000"   # serve if you want to serve static
+    volumes:
+      - .:/app
+    # command: npm run dev
